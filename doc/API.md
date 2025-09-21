@@ -60,9 +60,28 @@ info中包含的成员：
 
 返回值：value : ANY    当前存储的值，如果找不到此值，则会抛出异常
 
+- println(msg)
+
+参数说明：
+
+1. msg : STRING      要发送给主进程控制台的消息
+
+返回值：无
+
+**注意，如果与主进程链接断开，此方法会抛出异常，请在try-catch下调用**
+
+- readln()
+
+参数说明：无参数
+
+返回值：input : STRING      用户输入的字符串
+
+**注意，如果与主进程链接断开，此方法会抛出异常，请在try-catch下调用**
+
 ---
 
 有关更多语法/内置方法文档，参阅[TinyScript 文档](https://github.com/xy660/TinyScript/blob/main/doc)
+
 
 
 
