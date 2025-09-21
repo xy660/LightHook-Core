@@ -1,6 +1,6 @@
 # LightHook-Core 脚本API文档
 
-## Hook安装与卸载
+---
 
 - **hook(pSrc,pCallback,name)**
 
@@ -12,6 +12,7 @@
 
 返回值：无
 
+---
 
 - **unhook(name)**
 
@@ -20,6 +21,8 @@
 1. name : STRING    唯一名称
 
 返回值：无
+
+---
 
 - **createCallback(info)**
 
@@ -39,7 +42,9 @@ info中包含的成员：
 
 关于此方法具体描述，请参阅[TinyScript FFI文档](https://github.com/xy660/TinyScript/blob/main/doc/FFI.md)
 
-- storageSet(name,value)
+---
+
+- **storageSet(name,value)**
 
 参数说明：
 
@@ -50,9 +55,9 @@ info中包含的成员：
 
 此方法存储的值整个脚本运行环境内有效，适用于全局存储
 
+---
 
-
-- storageGet(name)
+- **storageGet(name)**
 
 参数说明：
 
@@ -60,7 +65,9 @@ info中包含的成员：
 
 返回值：value : ANY    当前存储的值，如果找不到此值，则会抛出异常
 
-- println(msg)
+---
+
+- **println(msg)**
 
 参数说明：
 
@@ -70,7 +77,9 @@ info中包含的成员：
 
 **注意，如果与主进程链接断开，此方法会抛出异常，请在try-catch下调用**
 
-- readln()
+---
+
+- **readln()**
 
 参数说明：无参数
 
@@ -81,6 +90,7 @@ info中包含的成员：
 ---
 
 有关更多语法/内置方法文档，参阅[TinyScript 文档](https://github.com/xy660/TinyScript/blob/main/doc)
+
 
 
 
