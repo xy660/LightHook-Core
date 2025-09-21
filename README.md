@@ -66,4 +66,12 @@ println("install hook successful");
 
 ![效果图](https://raw.githubusercontent.com/xy660/LightHook-Core/main/imgs/1.png)
 
+---
+
+##未来开发计划：
+
+- Console命令行注入器代替Winforms
+- Linux平台支持
+- Arm架构支持
+
 
